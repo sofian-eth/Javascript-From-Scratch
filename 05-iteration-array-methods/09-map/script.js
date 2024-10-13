@@ -49,3 +49,20 @@ const companyTime = companies.map(company => {
 });
 
 console.log(companyTime);
+
+// Chain map methods
+// lets take square root of the numbers and then double them
+
+const squareAndDouble = numbers
+.map(number => Math.sqrt(number))
+.map(sqrt => sqrt * 2);
+
+console.log(squareAndDouble);
+
+// chaining different methods
+
+const evenDouble = numbers
+.filter(number => number % 2 === 0)
+.map(number => number * 2);
+
+console.log(evenDouble);
